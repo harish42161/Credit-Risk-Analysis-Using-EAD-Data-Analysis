@@ -72,6 +72,7 @@ This project conducts **Exploratory Data Analysis (EDA)** on a financial dataset
 ---
 
 ## 📁 Project Structure
+```
 Credit-Risk-Analysis/
 ├── data/
 │ ├── application_data.csv # Raw dataset
@@ -79,7 +80,7 @@ Credit-Risk-Analysis/
 │ ├── main.ipynb # Full analysis code
 ├── README.md
 └── .gitignore
-
+```
 
 ---
 
@@ -87,4 +88,4 @@ Credit-Risk-Analysis/
 1. Clone the repository:
    ```bash
    git clone https://github.com/harish42161/Credit-Risk-Analysis-Using-EDA
-   
+  ``` 
