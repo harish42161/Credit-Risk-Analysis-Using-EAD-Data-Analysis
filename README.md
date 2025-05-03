@@ -28,7 +28,7 @@ This project performs an **Exploratory Data Analysis (EDA)** on a financial data
 ## 📂 Dataset Description
 | File | Description |
 |------|-------------|
-| `credit_risk_data.xlsx` | Contains customer demographic and loan-related data |
+| `application_data.csv` | Contains customer demographic and loan-related data |
 
 **Target Column:** `Loan_Status` – Binary indicator of whether the customer defaulted or not.
 
@@ -51,18 +51,34 @@ This project performs an **Exploratory Data Analysis (EDA)** on a financial data
 - Correlation heatmaps
 - KDE plots comparing defaulters vs non-defaulters
 
-> **Example Insight:**  
-> 📉 *Males and unmarried individuals showed higher default rates, while government employees and borrowers with children tended to repay more reliably.*
+
 
 ---
 
-## 🗂️ Project Structure
-credit-risk-analysis-eda/
-├── data/
-│ └── credit_risk_data.xlsx
-├── notebooks/
-│ └── main.ipynb
-├── README.md
-├── requirements.txt
-└── LICENSE
+## 📁 Project Structure
+```
+Credit EDA Case Study/
+│── data/
+│   ├── applications_data.csv
+│── notebooks/
+│   ├── main.ipynb
+│── README.md
+│── requirements.txt
+│── LICENSE
+```
+
+## 🛠 Installation & Usage
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/harish42161/loan-data-analysis.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd loan-data-analysis
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the Jupyter Notebook and explore the data.
 
