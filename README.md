@@ -1,91 +1,68 @@
-# Credit Risk Analysis Using Python & EDA
-📌 Project Overview
-This project presents an in-depth Exploratory Data Analysis (EDA) on a credit risk dataset to identify key factors that influence loan repayment behavior. By analyzing borrower demographics, income profiles, loan details, and repayment status, the goal is to extract actionable insights to support smarter lending decisions for financial institutions.
+# 📊 Credit Risk Analysis – EDA Case Study
 
-🚀 Key Features
-Data Cleaning & Preprocessing:
+> **A complete exploratory analysis to uncover hidden risk patterns in borrower data using Python.**
 
-Handled missing values, standardized column formats, removed duplicates
+---
 
-Converted data types for accurate analysis
+## 🔍 Overview
+This project performs an **Exploratory Data Analysis (EDA)** on a financial dataset related to loan applications and repayment status. The aim is to uncover the key demographic and financial variables that influence credit default, helping financial institutions **identify high-risk customers** and make better data-driven lending decisions.
 
-Univariate & Bivariate Analysis:
+---
 
-Explored distributions of features like gender, income type, family status, credit amount
+## 🎯 Objectives
+- Analyze customer attributes and loan history
+- Identify patterns among defaulters vs. non-defaulters
+- Visualize trends to support credit risk assessment
+- Prepare insights for future predictive modeling
 
-Investigated relationships between features and the target variable (loan default)
+---
 
-Data Binning & Grouping:
+## 🧰 Tools & Technologies
+| Language | Libraries | Platform |
+|----------|-----------|----------|
+| Python | Pandas, NumPy, Matplotlib, Seaborn | Jupyter Notebook |
+| Version Control | Git, GitHub | — |
 
-Categorized age, income, and credit amount into bins for trend comparison
+---
 
-Grouped borrower profiles to detect risk-prone segments
+## 📂 Dataset Description
+| File | Description |
+|------|-------------|
+| `credit_risk_data.xlsx` | Contains customer demographic and loan-related data |
 
-Outlier Treatment:
+**Target Column:** `Loan_Status` – Binary indicator of whether the customer defaulted or not.
 
-Detected and capped extreme values in income and loan features
+---
 
-Data Visualization:
+## 📌 Key Features & Steps
 
-Generated bar plots, histograms, KDE plots, and pie charts using Seaborn and Matplotlib
+### ✅ Data Cleaning & Preprocessing
+- Handled nulls, corrected data types
+- Removed duplicates and irrelevant columns
+- Binned numerical variables for better comparison
 
-Visualized correlations between features and repayment behavior
+### 📈 Exploratory Data Analysis (EDA)
+- Univariate & bivariate analysis (e.g., income, employment, loan amount)
+- Grouped variables by loan status for comparison
+- Outlier treatment using capping
 
-📊 Business Insights
-Males, especially unmarried applicants, showed a higher risk of default
+### 📊 Visualizations
+- Distribution plots, bar graphs, pie charts
+- Correlation heatmaps
+- KDE plots comparing defaulters vs non-defaulters
 
-Borrowers with more children had a lower likelihood of defaulting
+> **Example Insight:**  
+> 📉 *Males and unmarried individuals showed higher default rates, while government employees and borrowers with children tended to repay more reliably.*
 
-Government employees had higher repayment rates than commercial associates
+---
 
-Higher income and longer employment duration correlated with better repayment behavior
-
-Anomalies like extremely high income or loan values were treated as outliers to reduce skewness
-
-📁 Dataset
-The analysis is based on anonymized data representing borrower demographics, loan applications, credit history, and repayment status.
-
-🛠 Technologies Used
-Python: Pandas, NumPy, Seaborn, Matplotlib
-
-Jupyter Notebook
-
-Git & GitHub for version control
-
-📂 Project Structure
-css
-Copy
-Edit
+## 🗂️ Project Structure
 credit-risk-analysis-eda/
-│── data/
-│   └── credit_risk_data.xlsx
-│── notebooks/
-│   └── main.ipynb
-│── README.md
-│── requirements.txt
-│── LICENSE
-💻 Installation & Usage
-Clone the repository:
+├── data/
+│ └── credit_risk_data.xlsx
+├── notebooks/
+│ └── main.ipynb
+├── README.md
+├── requirements.txt
+└── LICENSE
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/credit-risk-analysis-eda.git
-Navigate to the project folder:
-
-bash
-Copy
-Edit
-cd credit-risk-analysis-eda
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the notebook:
-
-bash
-Copy
-Edit
-jupyter notebook notebooks/main.ipynb
